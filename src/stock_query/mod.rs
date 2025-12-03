@@ -8,11 +8,11 @@ pub struct StockQuery;
 impl Parser for StockQuery {
     type Output = types::StockItem;
 
-    fn request_xml() -> String {
+    fn request_xml(&self) -> String {
         include_str!("stock_query_request.xml").to_string()
     }
 
-    fn parse(xml: &str) -> Result<Self::Output> {
+    fn parse(self, xml: &str) -> Result<Self::Output> {
         let doc = Document::parse(xml)?;
         let root = doc.root_element();
         let mut purchases = Vec::new();

@@ -10,6 +10,6 @@ pub type Result<T> = std::result::Result<T, ParserError>;
 
 pub trait Parser {
     type Output;
-    fn request_xml() -> String;
-    fn parse(xml: &str) -> Result<Self::Output>;
+    fn request_xml(&self) -> String;
+    fn parse(self, xml: &str) -> Result<Self::Output>;
 }
