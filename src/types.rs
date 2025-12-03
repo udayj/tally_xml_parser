@@ -9,7 +9,7 @@ pub enum ParserError {
 pub type Result<T> = std::result::Result<T, ParserError>;
 
 pub trait Parser {
-    type Content;
+    type Output;
     fn request_xml() -> String;
-    fn parse(xml: &str) -> Result<Self::Content>;
+    fn parse(xml: &str) -> Result<Self::Output>;
 }
