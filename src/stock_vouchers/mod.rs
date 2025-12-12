@@ -108,7 +108,7 @@ impl Parser for StockVouchersQuery {
             }
         }
 
-        // Don't forget the last voucher
+        // Include the last voucher
         if let Some(v) = current_voucher {
             vouchers.push(v);
         }
