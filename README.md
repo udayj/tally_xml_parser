@@ -8,7 +8,6 @@ A Rust library for parsing XML responses from Tally ERP 9, with support for stoc
 - **Stock Voucher Queries**: Parse stock voucher transactions with in/out quantities, rates, and amounts
 - **Type-Safe Parsing**: Strongly-typed data structures with serde support for easy serialization
 - **Trait-Based Architecture**: Extensible `Parser` trait for adding custom query types
-- **Error Handling**: Comprehensive error handling using `thiserror`
 
 ## Installation
 
@@ -121,13 +120,6 @@ pub trait Parser {
 ```
 
 This allows for easy extension with custom query types while maintaining consistent error handling and API design.
-
-## Dependencies
-
-- `roxmltree` - Fast XML parsing
-- `serde` - Serialization framework
-- `thiserror` - Error handling
-- `serde_json` - JSON support
 
 ## License
 
