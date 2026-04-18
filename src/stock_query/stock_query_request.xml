@@ -9,6 +9,7 @@
         <DESC>
             <STATICVARIABLES>
                 <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                <SVFROMDATE>1st April 2022</SVFROMDATE>
                 <STOCKITEMNAME>{}</STOCKITEMNAME>
             </STATICVARIABLES>
         </DESC>
